@@ -1081,15 +1081,19 @@ body {
 
 /* ================= footer-form  ==================== */
 .footer-form {
+  display: flex;
   left: 57.5%;
   right: 11.04%;
   top: 32.05%;
   bottom: 42.31%;
 }
 .input-form-footer {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
   background-color: #000000;
   color: #ffffff;
-  border: 1px solid #ffffff;
+
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   left: 57.5%;
@@ -1098,11 +1102,11 @@ body {
   bottom: 42.31%;
   position: absolute;
   padding-left: 16px;
-  /* WHITE
-
-Header background, team card background
-*/
-  border: 1px solid #ffffff;
+  background-color: transparent;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.5;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
@@ -1123,12 +1127,10 @@ Header background, team card background
   color: #ffffff;
 }
 .btn-footer-form {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
   align-items: center;
   padding: 8px 24px;
   gap: 16px;
@@ -1140,13 +1142,14 @@ Header background, team card background
 
   /* IRIS */
 
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   border-radius: 4px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+
+  line-height: 1.5;
   /* identical to box height, or 150% */
 
   display: flex;
@@ -1155,8 +1158,9 @@ Header background, team card background
   letter-spacing: 0.04em;
 
   /* WHITE */
-
+  cursor: pointer;
   color: #ffffff;
+  border: none;
 }
 .contact-form-use:focus {
   fill: black;
@@ -1215,17 +1219,22 @@ Header background, team card background
   margin-right: 16px;
 }
 .sub-text {
+  font-weight: 500;
   margin-left: 85px;
+  margin-bottom: 16px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
+
   /* identical to box height, or 150% */
 
   letter-spacing: 0.02em;
-
   /* WHITE */
 
   color: #ffffff;
+}
+.wrapper-form-info {
+  margin-right: 24px;
 }

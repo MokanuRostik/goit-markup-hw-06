@@ -406,21 +406,27 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <span class="sub-text">Subscribe</span>
-          <label>
-            <input class="input-form-footer" type="text" placeholder="email" />
-            <button class="btn-footer-form">
-              <span class="text-btn">Subscribe</span>
-              <svg class="icons-button-form">
-                <use
-                  href="./images/icons.svg#icon-Frame-3"
-                  width="24"
-                  height="24"
-                ></use>
-              </svg></button
-          ></label>
-        </form>
+        <div class="footer-form-wrapper">
+          <form class="footer-form">
+            <p class="sub-text">Subscribe</p>
+            <label class="wrapper-form-info">
+              <input
+                class="input-form-footer"
+                type="email"
+                placeholder="E-mail"
+                name="user_email" />
+              <button class="btn-footer-form" type="submit">
+                <span class="text-btn">Subscribe</span>
+                <svg class="icons-button-form" width="24" height="24">
+                  <use
+                    href="./images/icons.svg#icon-Frame-3"
+                    width="24"
+                    height="24"
+                  ></use>
+                </svg></button
+            ></label>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
