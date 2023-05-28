@@ -441,23 +441,24 @@
         <p class="form-title">Leave your contacts and we will call you back</p>
         <form class="contact-form">
           <div class="wrapper-contact">
-            <label class="contact-form-field-wrapper">
+            <label class="contact-form-field-wrapper" for="user-name">
               <span class="contact-form-field-desc">Name</span>
-              <span class="contact-form-input-wrapper">
+              <div class="contact-form-input-wrapper">
                 <input
                   class="contact-form-input"
                   type="text"
-                  name="user_first_name"
+                  name="user-name"
                   required
                   pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+"
+                  id="user-name"
                 />
-                <svg class="contact-form-input-icon" width="18" height="18">
+                <svg class="contact-form-input-icon" width="18" height="24">
                   <use
                     class="icon-form"
                     href="./images/icons.svg#icon-name-vector"
                   ></use>
                 </svg>
-              </span>
+              </div>
             </label>
             <label class="contact-form-field-wrapper">
               <span class="contact-form-field-desc">Phone*</span>
@@ -493,6 +494,7 @@
             <div class="textarea-wrapper">
               <label
                 class="contact-form-field-wrapper contact-form-textarea-wrapper"
+                for="user-comment"
               >
                 <span class="contact-form-field-textarea">Comment</span>
 
@@ -500,26 +502,33 @@
                   class="contact-form-message"
                   name="user_message"
                   placeholder="Text input"
+                  id="user-comment"
                 ></textarea>
               </label>
             </div>
-            <label class="contact-form-checkbox-wrapper">
+
+            <div class="wrapper-checkbox">
               <input
-                class="contact-form-checkbox"
+                class="contact-form-checkbox visually-hidden"
                 type="checkbox"
-                name="user_policy"
+                name="user-privacy"
+                id="user-privacy"
+                value="true"
                 required
               />
-              <svg class="contact-form-own-checkbox" width="16" height="16">
-                <use
-                  class="contact-form-checkmark-icon"
-                  href="./images/icons.svg#icon-verycat"
-                ></use>
-              </svg>
-              <p class="svg-text">I accept the terms and conditions of the</p>
+              <label class="contact-form-checkbox-wrapper" for="user-privacy">
+                <svg class="contact-form-own-checkbox" width="16" height="16">
+                  <use
+                    class="contact-form-checkmark-icon"
+                    href="./images/icons.svg#icon-verycat"
+                  ></use>
+                </svg>
+                <p class="svg-text">I accept the terms and conditions of the</p>
 
-              <a href="" class="form-privacy">Privacy Policy</a>
-            </label>
+                <a href="" class="form-privacy">Privacy Policy</a>
+              </label>
+            </div>
+
             <button type="submit" class="contact-form-submit">Send</button>
           </div>
         </form>
