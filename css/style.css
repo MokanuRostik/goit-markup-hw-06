@@ -986,7 +986,7 @@ body {
 .contact-form-input {
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   border-radius: 4px;
   padding-left: 38px;
@@ -1077,22 +1077,25 @@ body {
   height: 56px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   padding: 16px 32px;
   gap: 10px;
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.09em;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   background-color: transparent;
 
   color: #ffffff;
   background-color: #4d5ae5;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* ================= footer-form  ==================== */
@@ -1189,6 +1192,7 @@ body {
 .textarea-wrapper {
   padding-left: 25px;
   padding-right: 25px;
+  margin-bottom: 16px;
 }
 .form-privacy {
   font-family: "Roboto";
@@ -1262,4 +1266,14 @@ body {
 }
 .contact-form-btn-icon-wrapper {
   position: relative;
+}
+.form-checkbox-icons {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
