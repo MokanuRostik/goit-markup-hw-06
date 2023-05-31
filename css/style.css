@@ -1040,7 +1040,8 @@ body {
 .contact-form-checkbox-wrapper {
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .contact-form-checkbox {
@@ -1276,4 +1277,9 @@ body {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+.contact-form-checkbox:checked .form-checkbox-icons {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
