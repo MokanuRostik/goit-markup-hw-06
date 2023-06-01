@@ -1052,27 +1052,8 @@ body {
   position: absolute;
 }
 
-.contact-form-own-checkbox {
-  padding: 3px;
-
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 6px;
-}
-
 .contact-form-checkbox:focus + .contact-form-own-checkbox {
   outline: 2px solid rgba(0, 0, 255, 0.5);
-}
-
-.contact-form-checkmark-icon {
-  opacity: 0;
-}
-
-.contact-form-checkbox:checked
-  + .contact-form-own-checkbox
-  > .contact-form-checkmark-icon {
-  opacity: 1;
-  color: #000000;
 }
 
 .contact-form-submit {
@@ -1284,8 +1265,11 @@ body {
   justify-content: center;
   fill: transparent;
 }
-#user-privacy:checked + .form-checkbox-icons {
+.contact-form-checkbox:checked
+  + .contact-form-checkbox-wrapper
+  > .form-checkbox-icons {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
+  border-color: #404bbf;
 }
