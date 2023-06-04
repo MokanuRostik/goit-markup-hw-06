@@ -1042,7 +1042,6 @@ body {
 }
 
 .contact-form-checkbox-wrapper {
-  display: flex;
   align-items: center;
   font-size: 12px;
   line-height: 1.17;
@@ -1194,7 +1193,6 @@ body {
 
   color: #4d5ae5;
   text-decoration: none;
-  margin-left: 6px;
 }
 .svg-text {
   font-family: "Roboto";
