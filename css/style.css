@@ -1125,7 +1125,7 @@ body {
   position: relative;
 
   align-items: center;
-  padding-left: 24px;
+  justify-content: center;
 
   gap: 16px;
 
@@ -1194,7 +1194,7 @@ body {
 .icons-button-form {
   position: absolute;
   top: 50%;
-  right: 24px;
+  right: 14px;
   transform: translateY(-50%);
   display: block;
   width: 24px;
